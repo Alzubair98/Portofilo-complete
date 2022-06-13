@@ -15,6 +15,16 @@ body {
   margin: 0%;
 }
 
+button:hover{
+  background-color: #6070FF;
+  color: #fff;
+}
+
+button:active{
+  background-color: #2230D2;
+  color: #fff;
+}
+
 /* first section  */
 .first-page-section {
   width: 100%;
@@ -459,4 +469,63 @@ ul {
 .normal {
   width: 30%;
   margin-right: 53%;
+}
+
+/* desktop-versions */
+
+@media (min-width: 768px){
+  .nav-menu{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    width: 30%;
+  }
+
+  .hambrger-button{
+    display: none;
+  }
+
+  .first-section-content-continer{
+    background-image: url(images/desktop-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    text-align: left;
+  }
+
+  .first-section-continer{
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+    width: 80%;
+  }
+
+  .card-div{
+    display: flex;
+    flex-direction: row;
+    height: 390px;
+    width: 95%;
+    border-radius: 24px;
+    gap: 50px;
+    position: relative;
+  }
+
+  .card-img{
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    margin-right: 3px;
+  }
+
+  .card-content{
+    gap: 8px;
+    width: 45%;
+    margin-left: 0%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+
+  }
+
+
 }
